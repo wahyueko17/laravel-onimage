@@ -1,6 +1,6 @@
 # Laravel Transeloquent
 
-**If you want the faster way to translate your model and store it in a single table, this package is built for you.**
+**Save your time to managing your image, and boost your productivity.**
 
 [![Build Status](https://travis-ci.org/Konnco/laravel-onimage.svg?branch=master)](https://travis-ci.org/Konnco/laravel-onimage)
 [![Latest Stable Version](https://poser.pugx.org/konnco/laravel-onimage/v/stable)](https://packagist.org/packages/konnco/laravel-onimage)
@@ -9,9 +9,7 @@
 [![License](https://poser.pugx.org/konnco/laravel-onimage/license)](https://packagist.org/packages/konnco/laravel-onimage)
 [![StyleCI](https://github.styleci.io/repos/228747586/shield?branch=master)](https://github.styleci.io/repos/228747586)
 
-This is a Laravel package for translatable models. Its goal is to remove the complexity in retrieving and storing multilingual model instances. With this package you write less code, as the translations are being fetched/saved when you fetch/save your instance.
-
-Maybe out there there's so many package that work the same way, and has more performance, but the purpose this package is make your development time faster.
+This package is pruposed to boosting your coding time for managing image. including image size and file storage. this package built in Intervention\Image Package.
 
 ***This package is still in alpha version, so the update may broke your application.***
 
@@ -29,7 +27,7 @@ php artisan migrate
 ```
 
 ## Configuration
-you can find transeloquent configuration here. `config/transeloquent.php`
+you can find onimage configuration here. `config/onimage.php`
 
 ```php
 return [
@@ -50,7 +48,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class News extends Model {
-    use \Konnco\Transeloquent\Transeloquent;
+    use \Konnco\Onimage\Onimage;
 }
 ```
 
